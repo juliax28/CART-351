@@ -1,0 +1,371 @@
+body {
+    background-image: url("images/brickwallBG.gif");
+}
+
+
+
+/*Home Page styling*/
+/* HomePage Popular and recent forums styling*/
+
+#HomePageContent {
+    padding-left: 250px;
+
+}
+
+/*Place Buttons*/
+#navigation {
+    padding-left: 300px;
+}
+
+.MainTitle {
+    display: flex;
+    justify-content: center;
+    color: #3b0017;
+    text-align: center;
+    background-color: #fcebf3;
+}
+
+/*White boxes for the topics*/
+.forumtopics {
+    border-style: ridge;
+    border-color: #ff69b4;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), #ffd6ee);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-left: 0;
+    padding-left: 15px;
+
+}
+
+
+
+/*Nav button styling*/
+.button1 {
+    border-color: #000000;
+    border-radius: 15px;
+    color: #000000;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #ff70b3;
+
+}
+
+.button1:hover {
+    border-color: #ffb6e1;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fc6283;
+
+}
+
+/*Sidebar styling*/
+.sidebar {
+    background-image: url("images/FallingHearts.gif");
+    height: calc(100vh - 40px);
+    width: 180px;
+    position: fixed;
+    top: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+}
+
+/*Sidebar position*/
+.ActivitySidebarPosition {
+    display: flex;
+    justify-content: right;
+
+
+}
+
+/*Inner boxes on sidebar*/
+ul {
+    background-color: #ffb6e1;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Error Page*/
+.ErrorBlock {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Grid used for threads page*/
+
+.topics {
+    padding: auto;
+    justify-content: center;
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffb6e1;
+    padding: 20px;
+    row-gap: 10px;
+    border-top: 1px solid #fff2f2
+}
+
+
+.grid-item {
+    padding: 20px;
+}
+
+.gridTopicTitles {
+    font-size: 20px;
+    color: #da4880;
+    text-decoration: none;
+}
+
+.gridStats {
+    font-size: 12px;
+    color: #da4880;
+    text-decoration: none;
+
+}
+
+.gridActivity {
+    font-size: 15px;
+    color: #da4880;
+    text-decoration: none;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffdef1;
+    padding: 20px;
+    row-gap: 10px;
+    border-style: solid;
+    border-top-color: #ffffff;
+    border-right-color: #ff70b3;
+    border-left-color: #ffffff;
+    border-bottom-color: #e269a1;
+}
+
+/*FLEXBOX STYLING FOR FORUM COMMENTS*/
+.ForumConversations {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contains all the content of the discussion*/
+.ThreadContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Where the conversation happens*/
+
+.CommentBox {
+    display: flex;
+    height: fit-content;
+}
+
+/* holds dialogue*/
+.CommentSect {
+    background-color: #fff2f2;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Holds pfp, status, username*/
+#Profile {
+
+    width: 150px;
+    align-content: center;
+    border-color: #ff69b4;
+    border-style: double;
+
+}
+
+/* Styling of the box holding the comment*/
+#Comment {
+
+    width: 675px;
+    align-content: center;
+    border-color: #ff69b4;
+    border-style: double;
+}
+
+/*date written*/
+#Stats {
+
+    width: 150px;
+    border-color: #ff69b4;
+    border-style: double;
+
+}
+
+/* Font size for mod/admin/member info*/
+.status {
+    font-size: x-small;
+}
+
+/* signature styling*/
+.signature {
+    border-top-style: double;
+    border-top-color: #ff69b4;
+    font-size: small;
+    width: 500px;
+    height: fit-content;
+}
+
+/* Page nubmers on convo styling*/
+.PageNumbers {
+    display: flex;
+    justify-content: center;
+}
+
+/*JULIE PROFILE CONTENT*/
+
+.JulieProfileContainer {
+
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 15px;
+}
+
+#ProfileBox01 {
+    background-color: #ff69b4;
+    height: 300px;
+    width: 300px;
+
+}
+
+#ProfileBox02 {
+    background-color: aliceblue;
+    height: 300px;
+    width: 900px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.RulesContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+#RulesBox {
+    background-color: rgb(255, 255, 255);
+    height: 1000px;
+    width: 1200px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+/* About Me Pop up for strange email*/
+/* Code taken from W3 schools and altered*/
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 500px;
+    height: 250px;
+    background-color: #ff69b4;
+    text-align: center;
+
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+
+}
+
+/* styling for the text within the popup*/
+.videodownloadlink {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+
+/*Julie Video Download Page*/
+
+
+.blankbg {
+    background-image: none;
+}
+
+.videoDownload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#videoDownloadText {
+    background-color: antiquewhite;
+    text-align: center;
+    border-style: solid;
+    border-top: #ffffff;
+    border-left: #ffffff;
+    border-color: #c0c0c0;
+    height: fit-content;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.downloadbutton {
+    color: #47f039;
+}
