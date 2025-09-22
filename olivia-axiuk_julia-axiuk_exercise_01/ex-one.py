@@ -39,3 +39,42 @@ for item in responseData:
     #Sainte-Anne-de-Bellevue, Montreal, Canada
     #[45.426509, -73.928944]
     print("Aqi:"f"{item["aqi"]}", "UID:" f"{item["uid"]}")
+
+
+    url_feed = "https://api.waqi.info/feed/@5468"
+response_feed = requests.get(url_feed, params={"token": token})
+results_feed = response_feed.json()
+print(results_feed)
+
+response_data_feed = results_feed["data"]
+print(type(response_data_feed))
+#the class of response_data_feed is a dictionary
+
+for i in response_data_feed:
+    print(i)
+#result: 
+# aqi
+# idx
+# attributions
+# city
+# dominentpol
+# iaqi
+# time
+# forecast
+# debug
+
+print(response_data_feed["aqi"]) #answer:The AQI represents the air quality index
+print(response_data_feed["dominentpol"]) #answer: The dominent pol is the dominent polutant
+
+dominentpolutant = response_data_feed["dominentpol"]
+Airquality = response_data_feed["aqi"]
+
+print(response_data_feed["iaqi"]['co']['v'])
+#using iaqi to acces the value of the dominent polutant
+iaqi =response_data_feed['iaqi']
+polutantvalue = iaqi[dominentpolutant]['v']
+print(polutantvalue)
+#the answer is 30, which corresponds to the AQI field
+
+# So - now that you can access the feed for a specific station in a particular city, and from that feed you can access the value of its dominant pollutant.... : explain theoretically (you do not have to write the code) what the process would be to access the value of the dominant pollutant value from different cities ...
+
