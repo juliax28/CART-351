@@ -78,4 +78,4 @@ print(polutantvalue)
 
 # So - now that you can access the feed for a specific station in a particular city, and from that feed you can access the value of its dominant pollutant.... : explain theoretically (you do not have to write the code) what the process would be to access the value of the dominant pollutant value from different cities ...
 
-
+# Firstly, you would have to access the "station" by first in "response" using the "get" function and selecting the city you want following the API's formatting. With the name of the city, you'd need to select a station by getting its key. Once the station is accessed, we can finds the value of the dominant polutant by using the stored information in  polutantvalue = iaqi[dominentpolutant]['v']. Once the value of the polutant is accessed, it will be stored into polutantvalue and can be printed. 
