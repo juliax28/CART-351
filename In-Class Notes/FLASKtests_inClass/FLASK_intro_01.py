@@ -51,7 +51,25 @@ def another_route(dynamicVar):
 #You will now see in the browser more information, and you can use your PIN to open the interactive console in the browser.
 #Good practice to keep debugging (and turning it off) as you're developing
 
+#INCLASS EXERCISE
+
+# @app.route("/routingex/<catName">)
+# def routingEx(catName)
+#     if catName.endswith("y"):
+#         catNewName = catName[:-1]
+#         catNewName+="iful"
+
+#     else:
+#         catNewName + "y"
+#     return f"<h2> the cat name of {catName} is <span style = color:orange'>{catNewName}</span>
 
 
+#TEMPLATING
+#MANY options 
+#Flask will look for folders in a folder called templates
+#RENDERING tempaltes is done with the RENDER TEMPLTATE function
+
+#CONTINUED IN FLASK_intro_02
 
 app.run()
+
