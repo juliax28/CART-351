@@ -69,7 +69,7 @@ def another_route(dynamicVar):
 #Flask will look for folders in a folder called templates
 #RENDERING tempaltes is done with the RENDER TEMPLTATE function
 
-#CONTINUED IN FLASK_intro_02
+#CONTINUED IN FLASKH_intro_02
 
 app.run()
 

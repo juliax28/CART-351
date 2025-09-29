@@ -36,7 +36,17 @@ def three():
     return render_template("Pineapples03.html", someHTMLVar = someNewVar, someHTMLList = someNewList, someHTMLDict = someDict)
 
 
-#you can EVEN have FOR LOOPS in JINJA
+#you can EVEN have FOR LOOPS and IF statements and SO MUCH MORE in JINJA
+#CHECK IT OUT in Pineapples04
+app.route("/four")
+def four():
+    a_new_list = ["cat", "frog", "dog"]
+    b_new_list = ["one", "two", "three"]
+    return render_template("pineapples_four.html", a_HTML_list = a_new_list, b_HTML_list = b_new_list)
+                        
+
+#HYPOTHETICAL
+userLoggedIn = True
 
 
 

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <tiltes>test Pineapples</tiltes>
+    </head>
+    <body>
+        <h1>Pineapples!</h1>
+        <img src = "static/images/download.jpg"/>
+        <h1>Pineapples VAR!{{SomeHTMLVar}}</h1>
+          <h1>Pineapples VAR!{{SomeHTMLList[0]}}</h1>
+
+           <h1>Pineapples VAR!{{SomeHTMLDict["taste"]}}</h1>
+           <h1> MY LIST: {{A_HTML_List}}</h1>
+           <ul>
+            {% for singleEl in a_HTML_List %}
+            <li> {{singleEl}}</li>
+            {% endfor %}
+           </ul>
+           {%  if "two" in b_HTML_list %}
+           <p> FOUND TWO! </p>
+           {% elif "ten" in b_HTML_List%}
+           <p> FOUN TEN!</p>
+           {% else %}
+           <p> NO TWO or TEN!</p>
+           {% endif %}
+    </body>
+</html>
