@@ -22,8 +22,8 @@ responseData = results["data"]
 
 print(responseData)
 
-# for item in responseData:
-#     print(item["station"])
+for item in responseData:
+    print(item["station"])
 
 
 
