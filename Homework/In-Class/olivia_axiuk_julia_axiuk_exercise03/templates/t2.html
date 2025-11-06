@@ -1,0 +1,14 @@
+<!-- will be a child of base-->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>** Welcome **</h3>
+<section class="fishbg">
+    <!-- stuff goes in here -->
+    <script src="{{url_for('static',filename='js/libraries/p5.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/ex3.js')}}"></script>
+    <h3 id="p5Score">It took you <span id="time"></span> seconds and <span id="bites"></span> bites to kill the fish.
+    </h3>
+</section>
+{% endblock %}
