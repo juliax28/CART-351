@@ -1,0 +1,33 @@
+<!-- will be a child of base-->
+{% extends "base.html" %}
+{% block scripts %}
+<all class="starry_bg">
+    <script src="{{url_for('static',filename='js/libraries/p5.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    {% endblock %}
+
+    {% block content %}
+    <header class="MainHeader">
+        <h2> Fortune Rookie </h2>
+    </header>
+    <h3> What sound advice does fate have in store for you? Press ENTER to write your name and ENTER again to input the
+        two last digits of your birth year. Press ENTER a third time to get your fortune. The history of fortunes told
+        will be stored on the right...</h3>
+    <section>
+        <!-- stuff goes in here -->
+        <div id="p5Container" class="fortuneBody">
+            <script src="{{url_for('static',filename='js/libraries/p5.min.js')}}"></script>
+            <script src="{{url_for('static',filename='js/script.js')}}"></script>
+            <div class="fortuneorganizer" id=resultcards>
+                <div class="fortune">
+                    <h3>
+                        Current Fortune
+                    </h3>
+                    Name: <span id="name"></span> Birthdate: <span id="birthyear"> </span> Fortune: <span
+                        id="text"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</all>
+{% endblock %}

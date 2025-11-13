@@ -1,0 +1,60 @@
+.fortune {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-image: linear-gradient(to top right, rgb(230, 130, 37), rgb(233, 137, 27), rgb(179, 97, 30));
+    min-height: 5vh;
+    max-height: fit-content;
+    border-radius: 10px;
+    box-shadow: inset -4px -4px #f5f19f, inset 4px 4px 0 #a7a68b;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+.histfortune {
+    background-image: linear-gradient(to top right, rgb(85, 30, 85), rgb(150, 103, 147), rgb(70, 30, 82));
+    text-align: left;
+    min-height: 5vh;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset -4px -4px #53501b, inset 4px 4px 0 #adac62;
+    color: #faf9b8;
+}
+
+.fortuneBody {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: left;
+    /* background-color: rgb(123, 119, 129); */
+    min-height: 5vh;
+    padding: 5px;
+    color: rgb(255, 253, 158);
+}
+
+
+.fortuneorganizer {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(109, 84, 219); */
+    min-height: 5vh;
+    padding: 5px;
+    color: rgb(255, 253, 158);
+
+}
+
+.MainHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.starry_bg {
+    display: flex;
+    justify-content: left;
+    background-image: radial-gradient(rgb(91, 74, 114), rgb(27, 10, 68));
+    padding: 10px;
+    color: rgb(255, 253, 158);
+}
