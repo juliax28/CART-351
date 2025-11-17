@@ -13,13 +13,45 @@ users = {} #for maintaining the users, a dictionaries! No limit on devices that 
 #handle new connection
 @socketio.on('connect')
 #^^ New decorater function, when it receeives a CONNECT message it will run the CONNECT function, given to the SOCKETIO decorator. Same pattern as app.run but with sockets!
+#SID stands for the CODE or user IDENTIFIER
 def connectFunction ():
      app.logger.info(request.sid)
 
+# Handle new user joining     
+@socketio.on('join')
+def handle_join(username):
+    users[request.sid] = username  # Store username by session ID
+    app.logger.info("in join function")
+    app.logger.info(users[request.sid])
+    app.logger.info(request.sid)
+    # send back message
+    emit("join-complete", f"{username} joined the chat")
+
+@socketio.on('textData')
+def handle_text(data):
+     app.logger.info(request.sid)
+     app.logger.info(data)
+     dataToSend = {}
+      #send to everyone but me, we use skip_sid to say SKIP THE ONE THAT REQUESTED THE MESSAGE
+     dataToSend["user"] = users[request.sid]
+     dataToSend["data"] = data["data"]
+     emit("dataFromServer",dataToSend,broadcast =True,skip_sid=request.sid)
+     
+
+# @app.route('/')
+# def index():
+#      return render_template('socketTest.html')
+# socketio.run(app, debug=True)
+
 @app.route('/')
 def index():
-     return render_template('socketTest.html')
+     #return render_template('socketTest.html')
+     return render_template('socket_p5Test.html')
+
+@socketio.on('newFlower')
+def handle_flower(flower):
+    app.logger.info(request.sid)
+    app.logger.info(flower)
+    emit("flowerFromServer",flower,broadcast =True,skip_sid=request.sid)
+    
 socketio.run(app, debug=True)
-
-
-
