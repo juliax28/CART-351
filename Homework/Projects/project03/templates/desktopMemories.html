@@ -1,0 +1,22 @@
+<!-- will be a child of base-->
+
+
+{% extends "base.html" %}
+
+<!-- js for this page-->
+{% block scriptblock %}
+<script src="{{url_for('static',filename='js/p5_lib/p5.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/p5_lib/p5.sound.min.js')}}"></script>
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+
+{% endblock %}
+
+{% block content %}
+<h3>Desktop Memories</h3>
+
+</div style="color: blue">
+
+
+
+{% endblock %}

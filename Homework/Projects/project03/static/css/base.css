@@ -1,0 +1,57 @@
+body {
+  background-image: linear-gradient(to bottom right, rgb(57, 75, 64), rgb(22, 136, 202));
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+.mainOrganize {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+
+}
+
+p {
+  padding: 2px;
+  width: 100%;
+}
+
+
+
+.wrapper {
+  width: 75%;
+  margin-left: 12%;
+}
+
+h2 {
+  color: rgb(106, 217, 236);
+}
+
+h3 {
+  text-align: center;
+  color: rgb(252, 242, 242);
+}
+
+
+/**** p5Container ***/
+#p5Container {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 50px;
+  display: grid;
+  /* Set up the grid and justify/align to center */
+  justify-content: center;
+  align-content: center;
+}
